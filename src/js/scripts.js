@@ -21,7 +21,11 @@ $(document).ready(function(){
 		}
 	});
 
-	// 
+	$('.nav-link').click(function(){
+		$('.navbar-collapse').removeClass('show')
+		$('.navbar-toggler').addClass('collapsed');
+	});
+
 	
 	$('.work-slider').slick({
   dots: true,
