@@ -7484,9 +7484,6 @@ body {
     .slick-dots button:hover, .slick-dots button:focus, .slick-dots button:active {
       background-color: #fff; }
 
-.profile-slider {
-  width: 100%; }
-
 .profile {
   height: 355px;
   border-right: 10px solid #ebebeb;
