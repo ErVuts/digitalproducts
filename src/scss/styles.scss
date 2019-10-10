@@ -1,0 +1,298 @@
+@font-face {
+  font-family: ProximaNova;
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/402D42_1_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.eot?#iefix) format("embedded-opentype"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.woff2) format("woff2"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.woff) format("woff"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.ttf) format("truetype"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.svg#wf) format("svg");
+  font-weight: 300;
+  font-style: normal
+}
+
+@font-face {
+  font-family: ProximaNova;
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.eot?#iefix) format("embedded-opentype"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.woff2) format("woff2"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.woff) format("woff"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.ttf) format("truetype"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.svg#wf) format("svg");
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+  font-family: ProximaNova;
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.eot?#iefix) format("embedded-opentype"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.woff2) format("woff2"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.woff) format("woff"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.ttf) format("truetype"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.svg#wf) format("svg");
+  font-weight: 700;
+  font-style: normal
+}
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&display=swap');
+
+@import 'mixin';
+@import 'slick';
+@import 'bootstrap/_bootstrap';
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 18px;
+	height: 100%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-size: 1rem;
+	height: 100%;
+	overflow-y: scroll;
+}
+
+.cover{
+	@include backGround;
+}
+
+.head-logo{
+	@include hover-focus{
+		opacity:.5;
+	}
+}
+
+.titles{
+	@include backGround;
+	height: 555px;
+	.headline{
+		top:30%;
+		left: 50%;
+		transform:translate(-50%, -50%)
+	}
+}
+
+.work-arrow{
+	position: absolute;
+	top:20%;
+	height: 50%;
+	font-size: 0;
+	background-color: transparent;
+	background-position:center;
+	background-repeat: no-repeat;
+	width:10%;
+	border:none;
+}
+
+.arrow-prev{
+	left: -20%;
+	background-image: url(../img/white-arrow-left.png);
+	outline:0;
+	@include hover-focus{
+		opacity:.5;
+	}
+	
+}
+.arrow-next{
+	right: -20%;
+	background-image: url(../img/white-arrow-right.png);
+	outline:0;
+	@include hover-focus{
+		opacity:.5;
+	}
+} 
+
+.slick-dots{
+	list-style-type:none;
+	margin-top: 45px;
+	padding: 0;
+	li{
+		display: inline-block;
+		font-size: 0;
+		margin: 4px;
+	}
+	.slick-active{
+		button{
+			background-color: $white;}
+	}
+	button{
+		padding: 4px;
+		border-radius:50%;
+		background-color: transparent;
+		border:2px solid $white;
+		@include hover-focus-active{
+			background-color: $white;
+		}
+	}
+}
+
+.profile-slider{
+	width: 100%;
+}
+
+.profile{
+	height: 355px;
+	border-right:10px solid $body;
+	border-left:10px solid $body;
+	&__img {
+		border:13px solid $body;
+		top:10%;
+		left:50%;
+		transform:translate(-50%, -50%)
+	}
+	&__body{
+	}
+	&__foot{
+		height: 70px;
+	}
+	&__icon{
+		fill:#fff;
+		@include hover-focus{
+			opacity:.5;
+		}
+	}
+}
+
+.profile-slider{
+	.slick-list{
+		padding-top: 115px;
+	}
+}
+
+.team-arrow{
+	position: absolute;
+	top:30%;
+	height: 50%;
+	font-size: 0;
+	background-color: transparent;
+	background-position:center;
+	background-repeat: no-repeat;
+	width:5%;
+	border:none;
+	outline:none;
+}
+
+.team-prev{
+	left: -10%;
+	z-index: 1;
+	background-image: url(../img/black-arrow-left.png);
+	
+}
+.team-next{
+	right: -10%;
+	background-image: url(../img/black-arrow-right.png);
+} 
+
+.map{
+	top:50%;
+	left: 50%;
+	transform:translate(-50%, -50%);
+	height: 100%;
+	width: 100%;
+	z-index: 0;
+	opacity:.5;
+}
+
+.slides {
+	opacity:.6;
+	&__body{
+		height: 90px;
+		transform:translate(74%,0);
+		@include hover-focus{
+			transform:translate(5%,0);	
+		}
+	}
+	&__icon{
+		width: 90px;
+		height: 90px;
+	}
+	&__item{
+		width: 250px;
+		height: 90px;
+	}
+}
+
+
+.form{
+	margin: auto;
+    text-align: center;
+    width: 80%;
+    margin-top: 60px;
+    position: relative;
+    z-index: 1;
+	input,
+	textarea{
+		background-color: rgba(255, 255, 255, 0.4);
+		background: rgba(255, 255, 255, 0.4);
+		color: rgba(255, 255, 255, 0.4);
+		&::placeholder{
+			color:$white;
+		}
+	}
+	input{
+		height: 55px;
+	}
+	textarea{
+		height: 150px;
+	}
+	&__btn{
+		border:none;
+		border-bottom:4px solid #8783b0
+	}
+	
+}
+
+footer{
+	height: 185px;
+	.icon{
+		fill:$white;
+		@include hover-focus{
+			opacity:.5;
+		}
+	}
+}
+
+ .homescroll {
+ 	height: 85px;
+ 	width:85px;
+ 	left:90%;
+ 	top:85%;
+ 	opacity:.5;
+ 	&::before{
+ 		content:'';
+		background-image: url('../img/arrow-top.svg');
+		background-size: 20px 20px; 
+ 		position: absolute;
+		width: 20px;
+		height: 20px;
+ 		top:50%;
+ 		left: 50%;
+ 		transform:translate(-50%, -50%);
+ 	}
+ }
+
+@include media-breakpoint-down(xs) { 
+	.homescroll{
+		left:95%;
+		&::before{
+	 		content:'';
+			background-image: url('../img/arrow-top.svg');
+			background-size: 20px 20px; 
+	 		position: absolute;
+			width: 20px;
+			height: 20px;
+	 		top:50%;
+	 		left:12%;
+	 		transform:translate(-50%, -50%);
+	 	}
+	}
+ }
+
+@include media-breakpoint-down(xs) { 
+	footer{
+		.container{
+			flex-direction: column;
+			text-align: center;
+		}
+	}
+ }
+
+ @include media-breakpoint-down(xs) { 
+	#about{
+		padding:20px 0;
+	}
+ }
+
+
