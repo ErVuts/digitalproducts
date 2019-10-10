@@ -117,7 +117,7 @@ $(document).ready(function(){
 	  	let marker = new google.maps.Marker({
     	position: {lat: -7.930406, lng: 112.637736},
     	map: map,
-    	icon:'../img/pin.svg'
+    	icon:'../img/pin.png'
 		});
 	}
 

@@ -7618,7 +7618,7 @@ footer {
   opacity: .5; }
   .homescroll::before {
     content: '';
-    background-image: url("../img/arrow-top.svg");
+    background-image: url("../img/arrow-top.png");
     background-size: 20px 20px;
     position: absolute;
     width: 20px;
@@ -7635,7 +7635,7 @@ footer {
     left: 95%; }
     .homescroll::before {
       content: '';
-      background-image: url("../img/arrow-top.svg");
+      background-image: url("img/arrow-top.png");
       background-size: 20px 20px;
       position: absolute;
       width: 20px;
